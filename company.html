@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Company Profile - NauticaLight Maritime Lighting Solutions</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Inter Font & Font Awesome Icons -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    },
+                    colors: {
+                        brand: {
+                            600: '#3d7c6d',
+                            700: '#326b5e',
+                            800: '#26584d',
+                            900: '#1e4a41',
+                            950: '#173b34',
+                        },
+                        accent: {
+                            400: '#e29a55',
+                            500: '#d07e2a',
+                            600: '#b96b1f',
+                            700: '#9c5a19',
+                        },
+                        sage: {
+                            400: '#8ba885',
+                            500: '#678762',
+                            600: '#55704f',
+                        },
+                        sand: {
+                            300: '#c9c0b2',
+                            400: '#a49886',
+                            500: '#807564',
+                            600: '#6d6455',
+                        },
+                        cream: '#f4efe6',
+                        'moon-cream': '#f7f3ec',
+                        'harbour-navy': '#162233',
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-moon-cream text-harbour-navy font-sans antialiased selection:bg-accent-500 selection:text-moon-cream">
+
+    <!-- ========================================================= -->
+    <!-- HEADER & NAVIGATION                                       -->
+    <!-- ========================================================= -->
+    <header class="fixed top-0 left-0 right-0 z-50 bg-moon-cream/90 backdrop-blur-md border-b border-harbour-navy/10">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="relative flex items-center justify-between h-20">
+
+                <!-- BRAND LOGO -->
+                <div class="flex items-center gap-3 shrink-0">
+                    <a href="index.html">
+                        <img id="site-logo"
+                             src="logoo.png"
+                             alt="avela Logo"
+                             class="h-12 sm:h-14 md:h-16 w-auto object-contain rounded">
+                    </a>
+                </div>
+
+                <!-- DESKTOP NAVIGATION MENU -->
+                <nav class="hidden md:flex items-center space-x-8 text-sm font-medium absolute left-1/2 -translate-x-1/2">
+                    <a href="company.html" class="text-accent-400 font-semibold hover:text-accent-500 transition-colors py-2">Company Profile</a>
+                    <a href="product.html" class="text-harbour-navy/80 hover:text-accent-400 transition-colors py-2">Products</a>
+                    <a href="index.html#catalog" class="text-harbour-navy/80 hover:text-accent-400 transition-colors py-2">Catalog</a>
+                    <a href="index.html#contact" class="text-harbour-navy/80 hover:text-accent-400 transition-colors py-2">Contact</a>
+                </nav>
+
+                <!-- CONTACT CTA BUTTON -->
+                <div class="hidden md:flex items-center shrink-0">
+                    <a href="index.html#contact" class="bg-accent-500 hover:bg-accent-600 text-harbour-navy font-semibold px-5 py-2.5 rounded-lg shadow-lg shadow-accent-500/20 transition-all transform hover:-translate-y-0.5">
+                        <i class="fa-solid fa-paper-plane mr-2"></i>Contact Admin
+                    </a>
+                </div>
+
+                <!-- MOBILE MENU BUTTON -->
+                <div class="md:hidden shrink-0">
+                    <button id="mobile-menu-btn" class="p-2 rounded-md text-harbour-navy/80 hover:text-harbour-navy hover:bg-moon-cream focus:outline-none">
+                        <i class="fa-solid fa-bars text-xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- MOBILE MENU DROPDOWN -->
+        <div id="mobile-menu" class="hidden md:hidden bg-moon-cream border-b border-harbour-navy/10 px-4 pt-2 pb-6 space-y-3">
+            <a href="company.html" class="block py-2 text-base font-medium text-accent-400 hover:text-accent-500">Company Profile</a>
+            <a href="product.html" class="block py-2 text-base font-medium text-harbour-navy/80 hover:text-accent-400">Products</a>
+            <a href="index.html#catalog" class="block py-2 text-base font-medium text-harbour-navy/80 hover:text-accent-400">Catalog</a>
+            <a href="index.html#contact" class="block py-2 text-base font-medium text-harbour-navy/80 hover:text-accent-400">Contact</a>
+            <a href="index.html#contact" class="inline-block w-full text-center bg-accent-500 text-harbour-navy font-semibold py-2.5 rounded-lg">Contact Admin</a>
+        </div>
+    </header>
+
+    <!-- ========================================================= -->
+    <!-- COMPANY PROFILE                                             -->
+    <!-- ========================================================= -->
+    <section id="company" class="py-24 scroll-mt-20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+            <!-- SECTION HEADING -->
+            <div class="text-center max-w-3xl mx-auto mb-20">
+                <h2 class="text-xs font-semibold uppercase tracking-widest text-accent-400 mb-3">Company Profile &amp; About Us</h2>
+                <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-harbour-navy leading-tight mb-6">
+                    A Trusted Partner for Maritime Industrial Lighting
+                </h1>
+                <p class="text-lg text-harbour-navy/80 leading-relaxed">
+                    NauticaLight (AVELA) is a leading provider of maritime lights and ship lighting built to high marine industry standards for safety and operational needs at sea.
+                </p>
+            </div>
+
+            <!-- NARRATIVE + FEATURES -->
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center mb-20">
+                <div class="lg:col-span-6">
+                    <img id="about-img-1"
+                         src="4.jpeg"
+                         alt="Ship Light Testing Facility"
+                         class="rounded-2xl w-full h-[500px] object-cover border border-harbour-navy/20 shadow-2xl">
+                </div>
+                <div class="lg:col-span-6 space-y-8">
+                    <h3 class="text-3xl sm:text-4xl font-bold text-harbour-navy">Why Choose Our Maritime Lighting Products?</h3>
+                    <p class="text-harbour-navy/70 text-base leading-relaxed mb-6">
+                        With decades of combined experience in marine lighting engineering, we design and supply lighting solutions that withstand the harshest maritime environments — from saltwater corrosion to extreme vibration and temperature variations.
+                    </p>
+
+                    <div class="space-y-5">
+                        <div class="flex items-start gap-4">
+                            <div class="w-11 h-11 rounded-xl bg-accent-500/15 flex items-center justify-center text-accent-400 shrink-0">
+                                <i class="fa-solid fa-water"></i>
+                            </div>
+                            <div>
+                                <h4 class="text-lg font-bold text-harbour-navy">High-Grade Anti-Corrosion Material</h4>
+                                <p class="text-harbour-navy/60 text-sm mt-1">Marine-grade aluminum and stainless steel housing rated for saltwater exposure.</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start gap-4">
+                            <div class="w-11 h-11 rounded-xl bg-accent-500/15 flex items-center justify-center text-accent-400 shrink-0">
+                                <i class="fa-solid fa-bolt"></i>
+                            </div>
+                            <div>
+                                <h4 class="text-lg font-bold text-harbour-navy">Energy Efficient &amp; Vibration Resistant</h4>
+                                <p class="text-harbour-navy/60 text-sm mt-1">LED technology with low power consumption and shock-resistant construction for rough seas.</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start gap-4">
+                            <div class="w-11 h-11 rounded-xl bg-accent-500/15 flex items-center justify-center text-accent-400 shrink-0">
+                                <i class="fa-solid fa-headset"></i>
+                            </div>
+                            <div>
+                                <h4 class="text-lg font-bold text-harbour-navy">Technical Support &amp; Full Warranty</h4>
+                                <p class="text-harbour-navy/60 text-sm mt-1">Dedicated engineering support and comprehensive warranty on all lighting products.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- VISION MISSION STANDARDS GRID -->
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-20">
+                <div class="bg-white/60 border border-harbour-navy/15 rounded-2xl p-8 hover:border-accent-500/60 transition-all">
+                    <div class="w-12 h-12 bg-accent-500/15 rounded-xl flex items-center justify-center text-accent-400 text-2xl mb-6">
+                        <i class="fa-solid fa-eye"></i>
+                    </div>
+                    <h4 class="text-xl font-bold text-harbour-navy mb-3">Company Vision</h4>
+                    <p class="text-harbour-navy/70 text-sm leading-relaxed">
+                        To be the most trusted maritime lighting partner across Indonesia and Southeast Asia, delivering safety and reliability at sea.
+                    </p>
+                </div>
+                <div class="bg-white/60 border border-harbour-navy/15 rounded-2xl p-8 hover:border-accent-500/60 transition-all">
+                    <div class="w-12 h-12 bg-accent-500/15 rounded-xl flex items-center justify-center text-accent-400 text-2xl mb-6">
+                        <i class="fa-solid fa-bullseye"></i>
+                    </div>
+                    <h4 class="text-xl font-bold text-harbour-navy mb-3">Core Mission</h4>
+                    <p class="text-harbour-navy/70 text-sm leading-relaxed">
+                        To provide high-quality, energy-efficient marine lighting solutions that meet international safety standards for every vessel.
+                    </p>
+                </div>
+                <div class="bg-white/60 border border-harbour-navy/15 rounded-2xl p-8 hover:border-accent-500/60 transition-all">
+                    <div class="w-12 h-12 bg-accent-500/15 rounded-xl flex items-center justify-center text-accent-400 text-2xl mb-6">
+                        <i class="fa-solid fa-shield-halved"></i>
+                    </div>
+                    <h4 class="text-xl font-bold text-harbour-navy mb-3">Certification &amp; Standards</h4>
+                    <p class="text-harbour-navy/70 text-sm leading-relaxed">
+                        All products comply with IMO, USCG, and marine industry standards with full test certificates and documentation.
+                    </p>
+                </div>
+            </div>
+
+            <!-- COMPANY HISTORY -->
+            <div class="mb-20">
+                <div class="text-center max-w-3xl mx-auto mb-12">
+                    <h2 class="text-xs font-semibold uppercase tracking-widest text-accent-400 mb-3">Our Journey</h2>
+                    <h3 class="text-3xl sm:text-4xl font-bold text-harbour-navy leading-tight mb-4">Company History</h3>
+                    <p class="text-lg text-harbour-navy/80 leading-relaxed">
+                        A brief story of how AVELA grew to become one of the trusted names in Indonesia's maritime lighting industry.
+                    </p>
+                </div>
+
+                <div class="relative">
+                    <!-- Vertical line -->
+                    <div class="hidden md:block absolute left-1/2 top-0 h-full w-px bg-harbour-navy/10 -translate-x-1/2"></div>
+
+                    <div class="space-y-12">
+                        <!-- Item 1 -->
+                        <div class="relative grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+                            <div class="md:text-right md:pr-12">
+                                <span class="inline-flex items-center px-3 py-1 rounded-full bg-accent-500/15 text-accent-400 text-xs font-semibold tracking-widest uppercase mb-4">Early Days</span>
+                                <h4 class="text-2xl font-bold text-harbour-navy mb-3">Foundation at Tanjung Priok</h4>
+                                <p class="text-harbour-navy/70 leading-relaxed">
+                                    AVELA was established in the heart of Tanjung Priok Port, North Jakarta. Starting with a small trading operation, we focused solely on supplying quality marine lighting to local shipyards and vessel owners.
+                                </p>
+                            </div>
+                            <div class="relative md:pl-12">
+                                <div class="hidden md:flex absolute left-0 top-1/2 -translate-y-1/2 -translate-x-9 w-10 h-10 rounded-full bg-accent-500 items-center justify-center text-white shadow-lg shadow-accent-500/30 z-10">
+                                    <i class="fa-solid fa-flag"></i>
+                                </div>
+                                <div class="bg-white/60 border border-harbour-navy/15 rounded-2xl p-6 sm:p-8">
+                                    <p class="text-harbour-navy/70 italic leading-relaxed">"Starting from a port-side warehouse, with one goal: to provide reliable lighting solutions for Indonesian vessels."</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Item 2 -->
+                        <div class="relative grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+                            <div class="md:order-2 md:pl-12">
+                                <span class="inline-flex items-center px-3 py-1 rounded-full bg-accent-500/15 text-accent-400 text-xs font-semibold tracking-widest uppercase mb-4">Growth</span>
+                                <h4 class="text-2xl font-bold text-harbour-navy mb-3">Expanding to Meet Demand</h4>
+                                <p class="text-harbour-navy/70 leading-relaxed">
+                                    As demand grew, we expanded our product range beyond basic deck lights to include navigation lights, signal lights, searchlights and floodlights. Our network also grew to serve ship repair yards across Jakarta and surrounding areas.
+                                </p>
+                            </div>
+                            <div class="relative md:order-1 md:text-right md:pr-12">
+                                <div class="hidden md:flex absolute -right-20 top-1/2 -translate-y-1/2 -translate-x-11 w-10 h-10 rounded-full bg-accent-500 items-center justify-center text-white shadow-lg shadow-accent-500/30 z-10">
+                                    <i class="fa-solid fa-chart-line"></i>
+                                </div>
+                                <div class="bg-white/60 border border-harbour-navy/15 rounded-2xl p-6 sm:p-8 md:ml-auto max-w-md">
+                                    <p class="text-harbour-navy/70 leading-relaxed">Building trust one project at a time, by focusing on product quality and after-sales support.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Item 3 -->
+                        <div class="relative grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+                            <div class="md:text-right md:pr-12">
+                                <span class="inline-flex items-center px-3 py-1 rounded-full bg-accent-500/15 text-accent-400 text-xs font-semibold tracking-widest uppercase mb-4">Now</span>
+                                <h4 class="text-2xl font-bold text-harbour-navy mb-3">A Trusted Maritime Lighting Partner</h4>
+                                <p class="text-harbour-navy/70 leading-relaxed">
+                                    Today, AVELA continues to serve commercial vessels, offshore platforms, shipyards, and port facilities across Indonesia. We focus on supplying IMO-compliant lighting, providing technical assistance, and ensuring our clients get the right solution with complete documentation.
+                                </p>
+                            </div>
+                            <div class="relative md:pl-12">
+                                 <div class="hidden md:flex absolute left-0 top-1/2 -translate-y-1/2 -translate-x-9 w-10 h-10 rounded-full bg-accent-500 items-center justify-center text-white shadow-lg shadow-accent-500/30 z-10">
+                                    <i class="fa-solid fa-anchor"></i>
+                                </div>
+                                <div class="bg-white/60 border border-harbour-navy/15 rounded-2xl p-6 sm:p-8">
+                                    <p class="text-harbour-navy/70 leading-relaxed">Still rooted at Tanjung Priok, now ready to support projects beyond Indonesia with the same commitment to safety and reliability.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- LEGAL & COMPANY INFO -->
+            <div class="mb-20">
+                <div class="text-center max-w-3xl mx-auto mb-12">
+                    <h2 class="text-xs font-semibold uppercase tracking-widest text-accent-400 mb-3">Company Information</h2>
+                    <h3 class="text-3xl sm:text-4xl font-bold text-harbour-navy leading-tight mb-4">Legal, Business &amp; Operational Data</h3>
+                    <p class="text-lg text-harbour-navy/80 leading-relaxed">
+                        Complete company profile overview for business purposes, tenders, and project requirements.
+                    </p>
+                </div>
+
+                <div class="bg-harbour-navy/5 border border-harbour-navy/10 rounded-3xl overflow-hidden shadow-xl">
+                    <div class="grid grid-cols-1 md:grid-cols-2 divide-y md:divide-y-0 md:divide-x divide-harbour-navy/10">
+                        <div class="p-8 sm:p-12 space-y-6">
+                            <h4 class="text-2xl font-bold text-harbour-navy">General Information</h4>
+                            <div class="space-y-5">
+                                <div class="flex items-start justify-between gap-4 border-b border-harbour-navy/10 pb-4">
+                                    <p class="text-harbour-navy/70">Company Name</p>
+                                    <p class="font-semibold text-right">lorem ipsum</p>
+                                </div>
+                                <div class="flex items-start justify-between gap-4 border-b border-harbour-navy/10 pb-4">
+                                    <p class="text-harbour-navy/70">Brand Name</p>
+                                    <p class="font-semibold text-right">AVELA | NauticaLight</p>
+                                </div>
+                                <div class="flex items-start justify-between gap-4 border-b border-harbour-navy/10 pb-4">
+                                    <p class="text-harbour-navy/70">Business Field</p>
+                                    <p class="font-semibold text-right">Lighting Supplier &amp; Distributor</p>
+                                </div>
+                                <div class="flex items-start justify-between gap-4 border-b border-harbour-navy/10 pb-4">
+                                    <p class="text-harbour-navy/70">Establishment</p>
+                                    <p class="font-semibold text-right">Indonesia</p>
+                                </div>
+                                <div class="flex items-start justify-between gap-4">
+                                    <p class="text-harbour-navy/70">Market Coverage</p>
+                                    <p class="font-semibold text-right">Indonesia &amp; Southeast Asia</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="p-8 sm:p-12 space-y-6">
+                            <h4 class="text-2xl font-bold text-harbour-navy">Contact &amp; Operational</h4>
+                            <div class="space-y-5">
+                                <div class="flex items-start justify-between gap-4 border-b border-harbour-navy/10 pb-4">
+                                    <p class="text-harbour-navy/70">Head Office</p>
+                                    <p class="font-semibold text-right">lorem ipsum dolor sit amet</p>
+                                </div>
+                                <div class="flex items-start justify-between gap-4 border-b border-harbour-navy/10 pb-4">
+                                    <p class="text-harbour-navy/70">Business Hours</p>
+                                    <p class="font-semibold text-right">Monday – Friday | 08:00 – 17:00 WIB</p>
+                                </div>
+                                <div class="flex items-start justify-between gap-4 border-b border-harbour-navy/10 pb-4">
+                                    <p class="text-harbour-navy/70">Phone</p>
+                                    <p class="font-semibold text-right">69669696</p>
+                                </div>
+                                <div class="flex items-start justify-between gap-4 border-b border-harbour-navy/10 pb-4">
+                                    <p class="text-harbour-navy/70">Email</p>
+                                    <p class="font-semibold text-right">sales@avela.com</p>
+                                </div>
+                                <div class="flex items-start justify-between gap-4">
+                                    <p class="text-harbour-navy/70">Focus</p>
+                                    <p class="font-semibold text-right">Supply, Quotation &amp; Technical Support</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- COMMITMENT -->
+            <div class="mb-20">
+                <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+                    <div class="lg:col-span-6">
+                        <h2 class="text-xs font-semibold uppercase tracking-widest text-accent-400 mb-3">Our Commitment</h2>
+                        <h3 class="text-3xl sm:text-4xl font-bold text-harbour-navy leading-tight mb-6">
+                            Safety, Reliability &amp; Long-Term Partnership
+                        </h3>
+                        <p class="text-harbour-navy/70 leading-relaxed mb-4">
+                            At AVELA, we believe that marine lighting is not just an accessory, but a critical safety component. A single failure can put crew, cargo, and vessels at risk. For that reason, we only supply products that are proven, tested, and fit for purpose.
+                        </p>
+                        <p class="text-harbour-navy/70 leading-relaxed mb-8">
+                            Beyond supplying products, we aim to build long-term partnerships. We listen, we advise, and we support our clients throughout the entire process - from product selection, documentation, to after-sales assistance.
+                        </p>
+
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                            <div class="flex items-center gap-3 p-4 rounded-xl bg-white/60 border border-harbour-navy/15">
+                                <div class="w-9 h-9 rounded-lg bg-accent-500/15 flex items-center justify-center text-accent-400">
+                                    <i class="fa-solid fa-check"></i>
+                                </div>
+                                <p class="font-medium">Right Product, Right Spec</p>
+                            </div>
+                            <div class="flex items-center gap-3 p-4 rounded-xl bg-white/60 border border-harbour-navy/15">
+                                <div class="w-9 h-9 rounded-lg bg-accent-500/15 flex items-center justify-center text-accent-400">
+                                    <i class="fa-solid fa-file-lines"></i>
+                                </div>
+                                <p class="font-medium">Complete Technical Documents</p>
+                            </div>
+                            <div class="flex items-center gap-3 p-4 rounded-xl bg-white/60 border border-harbour-navy/15">
+                                <div class="w-9 h-9 rounded-lg bg-accent-500/15 flex items-center justify-center text-accent-400">
+                                    <i class="fa-solid fa-clock-rotate-left"></i>
+                                </div>
+                                <p class="font-medium">Responsive Support</p>
+                            </div>
+                            <div class="flex items-center gap-3 p-4 rounded-xl bg-white/60 border border-harbour-navy/15">
+                                <div class="w-9 h-9 rounded-lg bg-accent-500/15 flex items-center justify-center text-accent-400">
+                                    <i class="fa-solid fa-handshake-angle"></i>
+                                </div>
+                                <p class="font-medium">Pragmatic &amp; Reliable</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="lg:col-span-6">
+                        <img src="3.jpeg" alt="Marine Lighting Project" class="rounded-2xl w-full h-[550px] object-cover border border-harbour-navy/20 shadow-2xl">
+                    </div>
+                </div>
+            </div>
+
+            <!-- COMPANY DETAILS -->
+            <div class="bg-harbour-navy/5 border border-harbour-navy/10 rounded-3xl p-8 sm:p-12 lg:p-16 shadow-xl">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+                    <div>
+                        <h3 class="text-2xl font-bold text-harbour-navy mb-6">About AVELA</h3>
+                        <p class="text-harbour-navy/70 leading-relaxed mb-4">
+                            lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                        </p>
+                        <p class="text-harbour-navy/70 leading-relaxed">
+                            lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                        </p>
+                    </div>
+                    <div class="space-y-6">
+                        <div class="flex items-start gap-4">
+                            <i class="fa-solid fa-location-dot text-accent-400 mt-1 shrink-0"></i>
+                            <div>
+                                <p class="font-semibold text-harbour-navy">Address</p>
+                                <p class="text-harbour-navy/60 text-sm">lorem ipsum dolor sit amet</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start gap-4">
+                            <i class="fa-solid fa-phone text-accent-400 mt-1 shrink-0"></i>
+                            <div>
+                                <p class="font-semibold text-harbour-navy">Phone</p>
+                                <p class="text-harbour-navy/60 text-sm">69669696</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start gap-4">
+                            <i class="fa-solid fa-envelope text-accent-400 mt-1 shrink-0"></i>
+                            <div>
+                                <p class="font-semibold text-harbour-navy">Email</p>
+                                <p class="text-harbour-navy/60 text-sm">sales@avela.com</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start gap-4">
+                            <i class="fa-solid fa-clock text-accent-400 mt-1 shrink-0"></i>
+                            <div>
+                                <p class="font-semibold text-harbour-navy">Hours</p>
+                                <p class="text-harbour-navy/60 text-sm">Mon–Fri: 08:00–17:00 WIB</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- ========================================================= -->
+    <!-- INTERACTIVE JAVASCRIPT                                    -->
+    <!-- ========================================================= -->
+    <script>
+        const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        if (mobileMenuBtn && mobileMenu) {
+            mobileMenuBtn.addEventListener('click', () => {
+                mobileMenu.classList.toggle('hidden');
+            });
+
+            document.querySelectorAll('#mobile-menu a').forEach(link => {
+                link.addEventListener('click', () => {
+                    mobileMenu.classList.add('hidden');
+                });
+            });
+        }
+    </script>
+</body>
+</html>

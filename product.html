@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products - NauticaLight Maritime Lighting Solutions</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Inter Font & Font Awesome Icons -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    },
+                    colors: {
+                        brand: {
+                            600: '#3d7c6d',
+                            700: '#326b5e',
+                            800: '#26584d',
+                            900: '#1e4a41',
+                            950: '#173b34',
+                        },
+                        accent: {
+                            400: '#e29a55',
+                            500: '#d07e2a',
+                            600: '#b96b1f',
+                            700: '#9c5a19',
+                        },
+                        sage: {
+                            400: '#8ba885',
+                            500: '#678762',
+                            600: '#55704f',
+                        },
+                        sand: {
+                            300: '#c9c0b2',
+                            400: '#a49886',
+                            500: '#807564',
+                            600: '#6d6455',
+                        },
+                        cream: '#f4efe6',
+                        'moon-cream': '#f7f3ec',
+                        'harbour-navy': '#162233',
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-moon-cream text-harbour-navy font-sans antialiased selection:bg-accent-500 selection:text-moon-cream">
+
+    <!-- ========================================================= -->
+    <!-- HEADER & NAVIGATION                                       -->
+    <!-- ========================================================= -->
+    <header class="fixed top-0 left-0 right-0 z-50 bg-moon-cream/90 backdrop-blur-md border-b border-harbour-navy/10">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="relative flex items-center justify-between h-20">
+
+                <!-- BRAND LOGO -->
+                <div class="flex items-center gap-3 shrink-0">
+                    <a href="index.html">
+                        <img id="site-logo"
+                             src="logoo.png"
+                             alt="avela Logo"
+                             class="h-12 sm:h-14 md:h-16 w-auto object-contain rounded">
+                    </a>
+                </div>
+
+                <!-- DESKTOP NAVIGATION MENU -->
+                <nav class="hidden md:flex items-center space-x-8 text-sm font-medium absolute left-1/2 -translate-x-1/2">
+                    <a href="index.html#company" class="text-harbour-navy/80 hover:text-accent-400 transition-colors py-2">About Us</a>
+                    <a href="product.html" class="text-accent-400 font-semibold hover:text-accent-500 transition-colors py-2">Products</a>
+                    <a href="index.html#catalog" class="text-harbour-navy/80 hover:text-accent-400 transition-colors py-2">Catalog</a>
+                    <a href="index.html#contact" class="text-harbour-navy/80 hover:text-accent-400 transition-colors py-2">Contact</a>
+                </nav>
+
+                <!-- CONTACT CTA BUTTON -->
+                <div class="hidden md:flex items-center shrink-0">
+                    <a href="index.html#catalog" class="bg-accent-500 hover:bg-accent-600 text-harbour-navy font-semibold px-5 py-2.5 rounded-lg shadow-lg shadow-accent-500/20 transition-all transform hover:-translate-y-0.5">
+                        <i class="fa-solid fa-download mr-2"></i>Product Catalog
+                    </a>
+                </div>
+
+                <!-- MOBILE MENU BUTTON -->
+                <div class="md:hidden shrink-0">
+                    <button id="mobile-menu-btn" class="p-2 rounded-md text-harbour-navy/80 hover:text-harbour-navy hover:bg-moon-cream focus:outline-none">
+                        <i class="fa-solid fa-bars text-xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- MOBILE MENU DROPDOWN -->
+        <div id="mobile-menu" class="hidden md:hidden bg-moon-cream border-b border-harbour-navy/10 px-4 pt-2 pb-6 space-y-3">
+            <a href="index.html#company" class="block py-2 text-base font-medium text-harbour-navy/80 hover:text-accent-400">About Us</a>
+            <a href="product.html" class="block py-2 text-base font-medium text-accent-400 hover:text-accent-500">Products</a>
+            <a href="index.html#catalog" class="block py-2 text-base font-medium text-harbour-navy/80 hover:text-accent-400">Catalog</a>
+            <a href="index.html#contact" class="block py-2 text-base font-medium text-harbour-navy/80 hover:text-accent-400">Contact</a>
+            <a href="index.html#catalog" class="inline-block w-full text-center bg-accent-500 text-harbour-navy font-semibold py-2.5 rounded-lg">Product Catalog</a>
+        </div>
+    </header>
+
+    <!-- ========================================================= -->
+    <!-- HERO / PAGE TITLE                                           -->
+    <!-- ========================================================= -->
+    <section class="pt-32 pb-16 md:pt-44 md:pb-24 overflow-hidden">
+        <div class="absolute top-1/4 left-1/2 -translate-x-1/2 -translate-y-1/2 w-96 h-96 bg-accent-500/10 rounded-full blur-3xl pointer-events-none"></div>
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="text-center">
+                <h2 class="text-xs font-semibold uppercase tracking-widest text-accent-400 mb-2">Our Products</h2>
+                <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-harbour-navy leading-tight mb-6">
+                    Premium Lighting Brand
+                </h1>
+                <p class="text-lg text-harbour-navy/80 max-w-2xl mx-auto leading-relaxed">
+                    Complete range of marine-grade lighting solutions built for commercial vessels, offshore platforms, and maritime fleets.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========================================================= -->
+    <!-- PRODUCTS (ALTERNATING ROWS)                               -->
+    <!-- ========================================================= -->
+    <section class="py-24 bg-harbour-navy text-moon-cream scroll-mt-20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="space-y-20 md:space-y-28">
+
+                <!-- PRODUCT 1: image left, text right -->
+                <article class="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16 items-center">
+                    <div class="relative overflow-hidden rounded-2xl border border-moon-cream/10 shadow-2xl">
+                        <div class="product-image-slider relative w-full h-72 sm:h-96" data-interval="4000">
+                            <img src="aurora1.png" alt="AURORA Series Navigation Light" class="product-slide w-full h-full object-cover absolute inset-0 transition-opacity duration-1000" data-slide="0">
+                            <img src="aurora2.png" alt="AURORA Series Navigation Light - Detail" class="product-slide w-full h-full object-cover absolute inset-0 opacity-0 transition-opacity duration-1000" data-slide="1">
+                        </div>
+                        <span class="absolute top-4 left-4 bg-accent-500 text-harbour-navy px-3 py-1 rounded text-xs font-bold uppercase tracking-wide">Best Seller</span>
+                    </div>
+                    <div class="lg:pl-4">
+                        <p class="text-accent-400 font-semibold text-sm uppercase tracking-widest mb-3">Desk Lamp</p>
+                        <h3 class="text-3xl sm:text-4xl font-extrabold text-moon-cream mb-4">AURORA</h3>
+                         <p class="text-moon-cream/70 text-base sm:text-lg leading-relaxed mb-6">
+                            lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                        <ul class="space-y-3 mb-8">
+                            <li class="flex items-center gap-3 text-moon-cream/80"><i class="fa-solid fa-circle-check text-accent-400"></i><span>Lorem ipsum dolor sit amet</span></li>
+                            <li class="flex items-center gap-3 text-moon-cream/80"><i class="fa-solid fa-circle-check text-accent-400"></i><span>Lorem ipsum dolor sit amet</span></li>
+                            <li class="flex items-center gap-3 text-moon-cream/80"><i class="fa-solid fa-circle-check text-accent-400"></i><span>Lorem ipsum dolor sit amet</span></li>
+                        </ul>
+                        <div class="flex flex-wrap items-center gap-4">
+                            <span class="text-accent-400 font-bold text-lg">IDR 3,500,000</span>
+                            <a href="index.html#contact" class="inline-flex items-center gap-2 bg-accent-500 hover:bg-accent-600 text-harbour-navy font-bold px-6 py-3 rounded-xl transition-all shadow-lg shadow-accent-500/20">
+                                Request Quote <i class="fa-solid fa-arrow-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- PRODUCT 2: image right, text left -->
+                <article class="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16 items-center">
+                    <div class="relative overflow-hidden rounded-2xl border border-moon-cream/10 shadow-2xl lg:order-2">
+                        <div class="product-image-slider relative w-full h-72 sm:h-96" data-interval="4000">
+                            <img src="capella1.png" alt="Marine Searchlight" class="product-slide w-full h-full object-cover absolute inset-0 transition-opacity duration-1000" data-slide="0">
+                            <img src="capella2.png" alt="Marine Searchlight - Detail" class="product-slide w-full h-full object-cover absolute inset-0 opacity-0 transition-opacity duration-1000" data-slide="1">
+                        </div>
+                        <span class="absolute top-4 left-4 bg-moon-cream/90 text-harbour-navy px-3 py-1 rounded text-xs font-bold uppercase tracking-wide">New Arrival</span>
+                    </div>
+                    <div class="lg:order-1 lg:pr-4">
+                        <p class="text-accent-400 font-semibold text-sm uppercase tracking-widest mb-3">Chandelier</p>
+                        <h3 class="text-3xl sm:text-4xl font-extrabold text-moon-cream mb-4">Capella</h3>
+                        <p class="text-moon-cream/70 text-base sm:text-lg leading-relaxed mb-6">
+                            lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                        <ul class="space-y-3 mb-8">
+                            <li class="flex items-center gap-3 text-moon-cream/80"><i class="fa-solid fa-circle-check text-accent-400"></i><span>Lorem ipsum dolor sit amet</span></li>
+                            <li class="flex items-center gap-3 text-moon-cream/80"><i class="fa-solid fa-circle-check text-accent-400"></i><span>Lorem ipsum dolor sit amet</span></li>
+                            <li class="flex items-center gap-3 text-moon-cream/80"><i class="fa-solid fa-circle-check text-accent-400"></i><span>Lorem ipsum dolor sit amet</span></li>
+                        </ul>
+                        <div class="flex flex-wrap items-center gap-4">
+                            <span class="text-accent-400 font-bold text-lg">IDR 5,200,000</span>
+                            <a href="index.html#contact" class="inline-flex items-center gap-2 bg-accent-500 hover:bg-accent-600 text-harbour-navy font-bold px-6 py-3 rounded-xl transition-all shadow-lg shadow-accent-500/20">
+                                Request Quote <i class="fa-solid fa-arrow-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- PRODUCT 3: image left, text right -->
+                <article class="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16 items-center">
+                    <div class="relative overflow-hidden rounded-2xl border border-moon-cream/10 shadow-2xl">
+                        <div class="product-image-slider relative w-full h-72 sm:h-96" data-interval="4000">
+                            <img src="arcturus.png" alt="Arcturus" class="product-slide w-full h-full object-cover absolute inset-0 transition-opacity duration-1000" data-slide="0">
+                            <img src="arcturus2.png" alt="Arcturus - Detail" class="product-slide w-full h-full object-cover absolute inset-0 opacity-0 transition-opacity duration-1000" data-slide="1">
+                        </div>
+                    </div>
+                    <div class="lg:pl-4">
+                        <p class="text-accent-400 font-semibold text-sm uppercase tracking-widest mb-3">Desk Lamp</p>
+                        <h3 class="text-3xl sm:text-4xl font-extrabold text-moon-cream mb-4">Arcturus</h3>
+                        <p class="text-moon-cream/70 text-base sm:text-lg leading-relaxed mb-6">
+                            lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                        </p>
+                        <ul class="space-y-3 mb-8">
+                            <li class="flex items-center gap-3 text-moon-cream/80"><i class="fa-solid fa-circle-check text-accent-400"></i><span>Lorem ipsum dolor sit amet</span></li>
+                            <li class="flex items-center gap-3 text-moon-cream/80"><i class="fa-solid fa-circle-check text-accent-400"></i><span>Lorem ipsum dolor sit amet</span></li>
+                            <li class="flex items-center gap-3 text-moon-cream/80"><i class="fa-solid fa-circle-check text-accent-400"></i><span>Lorem ipsum dolor sit amet</span></li>
+                        </ul>
+                        <div class="flex flex-wrap items-center gap-4">
+                            <span class="text-accent-400 font-bold text-lg">IDR 2,800,000</span>
+                            <a href="index.html#contact" class="inline-flex items-center gap-2 bg-accent-500 hover:bg-accent-600 text-harbour-navy font-bold px-6 py-3 rounded-xl transition-all shadow-lg shadow-accent-500/20">
+                                Request Quote <i class="fa-solid fa-arrow-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- PRODUCT 4: image right, text left -->
+                <article class="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16 items-center">
+                    <div class="relative overflow-hidden rounded-2xl border border-moon-cream/10 shadow-2xl lg:order-2">
+                        <div class="product-image-slider relative w-full h-72 sm:h-96" data-interval="4000">
+                            <img src="dscubba.jpg" alt="LED Mast Light" class="product-slide w-full h-full object-cover absolute inset-0 transition-opacity duration-1000" data-slide="0">
+                            <img src="dscubba2.jpg" alt="LED Mast Light - Detail" class="product-slide w-full h-full object-cover absolute inset-0 opacity-0 transition-opacity duration-1000" data-slide="1">
+                        </div>
+                        <span class="absolute top-4 left-4 bg-accent-500 text-harbour-navy px-3 py-1 rounded text-xs font-bold uppercase tracking-wide">LED</span>
+                    </div>
+                    <div class="lg:order-1 lg:pr-4">
+                        <p class="text-accent-400 font-semibold text-sm uppercase tracking-widest mb-3">Desk Lamp</p>
+                        <h3 class="text-3xl sm:text-4xl font-extrabold text-moon-cream mb-4">Dschubba</h3>
+                        <p class="text-moon-cream/70 text-base sm:text-lg leading-relaxed mb-6">
+                            lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                        </p>
+                        <ul class="space-y-3 mb-8">
+                            <li class="flex items-center gap-3 text-moon-cream/80"><i class="fa-solid fa-circle-check text-accent-400"></i><span>Lorem ipsum dolor sit amet</span></li>
+                            <li class="flex items-center gap-3 text-moon-cream/80"><i class="fa-solid fa-circle-check text-accent-400"></i><span>Lorem ipsum dolor sit amet</span></li>
+                            <li class="flex items-center gap-3 text-moon-cream/80"><i class="fa-solid fa-circle-check text-accent-400"></i><span>Lorem ipsum dolor sit amet</span></li>
+                        </ul>
+                        <div class="flex flex-wrap items-center gap-4">
+                            <span class="text-accent-400 font-bold text-lg">IDR 4,100,000</span>
+                            <a href="index.html#contact" class="inline-flex items-center gap-2 bg-accent-500 hover:bg-accent-600 text-harbour-navy font-bold px-6 py-3 rounded-xl transition-all shadow-lg shadow-accent-500/20">
+                                Request Quote <i class="fa-solid fa-arrow-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- PRODUCT 5: image left, text right -->
+                <article class="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16 items-center">
+                    <div class="relative overflow-hidden rounded-2xl border border-moon-cream/10 shadow-2xl">
+                        <div class="product-image-slider relative w-full h-72 sm:h-96" data-interval="4000">
+                            <img src="mimosa1.jpg" alt="Stern Navigation Light" class="product-slide w-full h-full object-cover absolute inset-0 transition-opacity duration-1000" data-slide="0">
+                            <img src="mimosa2.jpg" alt="Stern Navigation Light - Detail" class="product-slide w-full h-full object-cover absolute inset-0 opacity-0 transition-opacity duration-1000" data-slide="1">
+                        </div>
+                    </div>
+                    <div class="lg:pl-4">
+                        <p class="text-accent-400 font-semibold text-sm uppercase tracking-widest mb-3">Desk Lamp</p>
+                        <h3 class="text-3xl sm:text-4xl font-extrabold text-moon-cream mb-4">Mimosa</h3>
+                        <p class="text-moon-cream/70 text-base sm:text-lg leading-relaxed mb-6">
+                            lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                        </p>
+                        <ul class="space-y-3 mb-8">
+                            <li class="flex items-center gap-3 text-moon-cream/80"><i class="fa-solid fa-circle-check text-accent-400"></i><span>Lorem ipsum dolor sit amet</span></li>
+                            <li class="flex items-center gap-3 text-moon-cream/80"><i class="fa-solid fa-circle-check text-accent-400"></i><span>Lorem ipsum dolor sit amet</span></li>
+                            <li class="flex items-center gap-3 text-moon-cream/80"><i class="fa-solid fa-circle-check text-accent-400"></i><span>Lorem ipsum dolor sit amet</span></li>
+                        </ul>
+                        <div class="flex flex-wrap items-center gap-4">
+                            <span class="text-accent-400 font-bold text-lg">IDR 2,300,000</span>
+                            <a href="index.html#contact" class="inline-flex items-center gap-2 bg-accent-500 hover:bg-accent-600 text-harbour-navy font-bold px-6 py-3 rounded-xl transition-all shadow-lg shadow-accent-500/20">
+                                Request Quote <i class="fa-solid fa-arrow-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- PRODUCT 6: image right, text left -->
+                <article class="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16 items-center">
+                    <div class="relative overflow-hidden rounded-2xl border border-moon-cream/10 shadow-2xl lg:order-2">
+                        <div class="product-image-slider relative w-full h-72 sm:h-96" data-interval="4000">
+                            <img src="alderamin.jpg" alt="Port Navigation Light" class="product-slide w-full h-full object-cover absolute inset-0 transition-opacity duration-1000" data-slide="0">
+                            <img src="alderamin2.jpg" alt="Port Navigation Light - Detail" class="product-slide w-full h-full object-cover absolute inset-0 opacity-0 transition-opacity duration-1000" data-slide="1">
+                        </div>
+                    </div>
+                    <div class="lg:order-1 lg:pr-4">
+                        <p class="text-accent-400 font-semibold text-sm uppercase tracking-widest mb-3">Desk Lamp</p>
+                        <h3 class="text-3xl sm:text-4xl font-extrabold text-moon-cream mb-4">Alderamin</h3>
+                        <p class="text-moon-cream/70 text-base sm:text-lg leading-relaxed mb-6">
+                            lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                        </p>
+                        <ul class="space-y-3 mb-8">
+                            <li class="flex items-center gap-3 text-moon-cream/80"><i class="fa-solid fa-circle-check text-accent-400"></i><span>Lorem ipsum dolor sit amet</span></li>
+                            <li class="flex items-center gap-3 text-moon-cream/80"><i class="fa-solid fa-circle-check text-accent-400"></i><span>Lorem ipsum dolor sit amet</span></li>
+                            <li class="flex items-center gap-3 text-moon-cream/80"><i class="fa-solid fa-circle-check text-accent-400"></i><span>Lorem ipsum dolor sit amet</span></li>
+                        </ul>
+                        <div class="flex flex-wrap items-center gap-4">
+                            <span class="text-accent-400 font-bold text-lg">IDR 2,300,000</span>
+                            <a href="index.html#contact" class="inline-flex items-center gap-2 bg-accent-500 hover:bg-accent-600 text-harbour-navy font-bold px-6 py-3 rounded-xl transition-all shadow-lg shadow-accent-500/20">
+                                Request Quote <i class="fa-solid fa-arrow-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- PRODUCT 7: image left, text right -->
+                <article class="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16 items-center">
+                    <div class="relative overflow-hidden rounded-2xl border border-moon-cream/10 shadow-2xl">
+                        <div class="product-image-slider relative w-full h-72 sm:h-96" data-interval="4000">
+                            <img src="zosma1.jpeg" alt="Arcturus" class="product-slide w-full h-full object-cover absolute inset-0 transition-opacity duration-1000" data-slide="0">
+                            <img src="zosma2.jpeg" alt="Arcturus - Detail" class="product-slide w-full h-full object-cover absolute inset-0 opacity-0 transition-opacity duration-1000" data-slide="1">
+                        </div>
+                        <span class="absolute top-4 left-4 bg-accent-500 text-harbour-navy px-3 py-1 rounded text-xs font-bold uppercase tracking-wide">LED</span>
+                    </div>
+                    <div class="lg:pl-4">
+                        <p class="text-accent-400 font-semibold text-sm uppercase tracking-widest mb-3">Night Lamp</p>
+                        <h3 class="text-3xl sm:text-4xl font-extrabold text-moon-cream mb-4">Zosma</h3>
+                        <p class="text-moon-cream/70 text-base sm:text-lg leading-relaxed mb-6">
+                           lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                        </p>
+                        <ul class="space-y-3 mb-8">
+                            <li class="flex items-center gap-3 text-moon-cream/80"><i class="fa-solid fa-circle-check text-accent-400"></i><span>Lorem ipsum dolor sit amet</span></li>
+                            <li class="flex items-center gap-3 text-moon-cream/80"><i class="fa-solid fa-circle-check text-accent-400"></i><span>Lorem ipsum dolor sit amet</span></li>
+                            <li class="flex items-center gap-3 text-moon-cream/80"><i class="fa-solid fa-circle-check text-accent-400"></i><span>Lorem ipsum dolor sit amet</span></li>
+                        </ul>
+                        <div class="flex flex-wrap items-center gap-4">
+                            <span class="text-accent-400 font-bold text-lg">IDR 2,300,000</span>
+                            <a href="index.html#contact" class="inline-flex items-center gap-2 bg-accent-500 hover:bg-accent-600 text-harbour-navy font-bold px-6 py-3 rounded-xl transition-all shadow-lg shadow-accent-500/20">
+                                Request Quote <i class="fa-solid fa-arrow-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- PRODUCT 8: image right, text left -->
+                <article class="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16 items-center">
+                    <div class="relative overflow-hidden rounded-2xl border border-moon-cream/10 shadow-2xl lg:order-2">
+                        <div class="product-image-slider relative w-full h-72 sm:h-96" data-interval="4000">
+                            <img src="volans1.jpeg" alt="Emergency Floodlight" class="product-slide w-full h-full object-cover absolute inset-0 transition-opacity duration-1000" data-slide="0">
+                            <img src="volans2.jpeg" alt="Emergency Floodlight - Detail" class="product-slide w-full h-full object-cover absolute inset-0 opacity-0 transition-opacity duration-1000" data-slide="1">
+                        </div>
+                    </div>
+                    <div class="lg:order-1 lg:pr-4">
+                        <p class="text-accent-400 font-semibold text-sm uppercase tracking-widest mb-3">Wall Lamp</p>
+                        <h3 class="text-3xl sm:text-4xl font-extrabold text-moon-cream mb-4">Volans</h3>
+                        <p class="text-moon-cream/70 text-base sm:text-lg leading-relaxed mb-6">
+                            lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                        </p>
+                        <ul class="space-y-3 mb-8">
+                            <li class="flex items-center gap-3 text-moon-cream/80"><i class="fa-solid fa-circle-check text-accent-400"></i><span>Lorem ipsum dolor sit amet</span></li>
+                            <li class="flex items-center gap-3 text-moon-cream/80"><i class="fa-solid fa-circle-check text-accent-400"></i><span>Lorem ipsum dolor sit amet</span></li>
+                            <li class="flex items-center gap-3 text-moon-cream/80"><i class="fa-solid fa-circle-check text-accent-400"></i><span>Lorem ipsum dolor sit amet</span></li>
+                        </ul>
+                        <div class="flex flex-wrap items-center gap-4">
+                            <span class="text-accent-400 font-bold text-lg">IDR 3,900,000</span>
+                            <a href="index.html#contact" class="inline-flex items-center gap-2 bg-accent-500 hover:bg-accent-600 text-harbour-navy font-bold px-6 py-3 rounded-xl transition-all shadow-lg shadow-accent-500/20">
+                                Request Quote <i class="fa-solid fa-arrow-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                </article>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ========================================================= -->
+    <!-- CATALOG DOWNLOAD                                           -->
+    <!-- ========================================================= -->
+    <section id="catalog" class="py-24 bg-moon-cream border-t border-harbour-navy/10 scroll-mt-20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="mt-16 bg-moon-cream border border-harbour-navy/20 rounded-3xl p-8 sm:p-12 lg:p-16 relative overflow-hidden shadow-2xl">
+                <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center relative z-10">
+                    <div class="lg:col-span-7 space-y-4">
+                        <h3 class="text-3xl sm:text-4xl font-extrabold text-harbour-navy">Download the Complete Catalog &amp; Technical Specifications</h3>
+                        <p class="text-harbour-navy/80 text-sm sm:text-base leading-relaxed">
+                            Get the full list of Maritime Lamp products, including lighting curves, wiring diagrams, test certificates, and official pricing.
+                        </p>
+
+                        <!-- CATALOG DOWNLOAD FORM -->
+                        <form onsubmit="handleCatalogDownload(event)" class="pt-4 flex flex-col sm:flex-row gap-3 max-w-lg">
+                            <input type="email"
+                                   required
+                                   placeholder="Enter Your Email..."
+                                   class="px-4 py-3.5 rounded-xl bg-white/80 border border-harbour-navy/30 text-harbour-navy placeholder-harbour-navy/40 focus:outline-none focus:border-accent-400 text-sm flex-1">
+                            <button type="submit" class="bg-accent-500 hover:bg-accent-600 text-harbour-navy font-bold px-6 py-3.5 rounded-xl transition-all flex items-center justify-center gap-2 text-sm whitespace-nowrap shadow-lg shadow-accent-500/20">
+                                <i class="fa-solid fa-file-pdf text-lg"></i>
+                                Download Catalog (PDF)
+                            </button>
+                        </form>
+                        <p id="download-message" class="text-xs text-accent-400 hidden pt-2">
+                            <i class="fa-solid fa-circle-check mr-1"></i> Thank you! The PDF catalog download link has been sent.
+                        </p>
+                    </div>
+
+                    <!-- CATALOG PREVIEW GRAPHIC -->
+                    <div class="lg:col-span-5 flex justify-center">
+                        <div class="relative w-full max-w-xs bg-moon-cream border border-harbour-navy/30 rounded-2xl p-6 shadow-2xl transform rotate-2 hover:rotate-0 transition-transform">
+                            <img id="catalog-cover-img"
+                                 src="https://images.unsplash.com/photo-1544620347-c4fd4a3d5957?auto=format&fit=crop&w=400&q=80"
+                                 alt="Maritime Lamp Catalog Cover"
+                                 class="w-full h-56 object-cover rounded-xl mb-4 border border-harbour-navy/20">
+                            <div class="flex justify-between items-center text-xs">
+                                <div>
+                                    <p class="text-harbour-navy font-bold">Avela Catalog</p>
+                                    <p class="text-harbour-navy/50">PDF • 14.5 MB</p>
+                                </div>
+                                <span class="bg-accent-500/20 text-accent-400 px-2.5 py-1 rounded text-[10px] font-bold">
+                                    LATEST VERSION
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========================================================= -->
+    <!-- INTERACTIVE JAVASCRIPT                                    -->
+    <!-- ========================================================= -->
+    <script>
+        // Mobile Menu Toggle
+        const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        if (mobileMenuBtn && mobileMenu) {
+            mobileMenuBtn.addEventListener('click', () => {
+                mobileMenu.classList.toggle('hidden');
+            });
+
+            document.querySelectorAll('#mobile-menu a').forEach(link => {
+                link.addEventListener('click', () => {
+                    mobileMenu.classList.add('hidden');
+                });
+            });
+        }
+
+        // Catalog Download Form Handler
+        function handleCatalogDownload(event) {
+            event.preventDefault();
+            const msg = document.getElementById('download-message');
+            if (msg) {
+                msg.classList.remove('hidden');
+                setTimeout(() => {
+                    msg.classList.add('hidden');
+                }, 5000);
+            }
+        }
+
+        // Product Image Auto-Rotation
+        function initProductImageSliders() {
+            const sliders = document.querySelectorAll('.product-image-slider');
+            
+            sliders.forEach(slider => {
+                const slides = slider.querySelectorAll('.product-slide');
+                const interval = parseInt(slider.dataset.interval) || 4000;
+                let currentSlide = 0;
+                let slideTimer;
+
+                function showSlide(index) {
+                    slides.forEach((slide, i) => {
+                        if (i === index) {
+                            slide.classList.remove('opacity-0');
+                            slide.classList.add('opacity-100');
+                        } else {
+                            slide.classList.remove('opacity-100');
+                            slide.classList.add('opacity-0');
+                        }
+                    });
+                }
+
+                function nextSlide() {
+                    currentSlide = (currentSlide + 1) % slides.length;
+                    showSlide(currentSlide);
+                }
+
+                function startRotation() {
+                    slideTimer = setInterval(nextSlide, interval);
+                }
+
+                function stopRotation() {
+                    clearInterval(slideTimer);
+                }
+
+
+                // Start rotation
+                startRotation();
+            });
+        }
+
+        // Initialize on DOM ready
+        document.addEventListener('DOMContentLoaded', initProductImageSliders);
+    </script>
+</body>
+</html>

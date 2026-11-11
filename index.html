@@ -1,0 +1,559 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NauticaLight - Premium Lighting Solutions</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Inter Font & Font Awesome Icons -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    },
+                    colors: {
+                        brand: {
+                            600: '#3d7c6d',
+                            700: '#326b5e',
+                            800: '#26584d',
+                            900: '#1e4a41',
+                            950: '#173b34',
+                        },
+                        accent: {
+                            400: '#e29a55',
+                            500: '#d07e2a',
+                            600: '#b96b1f',
+                            700: '#9c5a19',
+                        },
+                        sage: {
+                            400: '#8ba885',
+                            500: '#678762',
+                            600: '#55704f',
+                        },
+                        sand: {
+                            300: '#c9c0b2',
+                            400: '#a49886',
+                            500: '#807564',
+                            600: '#6d6455',
+                        },
+                        cream: '#f4efe6',
+                        'moon-cream': '#f7f3ec',
+                        'harbour-navy': '#162233',
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-moon-cream text-harbour-navy font-sans antialiased selection:bg-accent-500 selection:text-moon-cream">
+
+    <!-- ========================================================= -->
+    <!-- HEADER & NAVIGATION                                       -->
+    <!-- ========================================================= -->
+    <header class="fixed top-0 left-0 right-0 z-50 bg-moon-cream/90 backdrop-blur-md border-b border-harbour-navy/10">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="relative flex items-center justify-between h-20">
+
+                <!-- BRAND LOGO -->
+                <div class="flex items-center gap-3 shrink-0">
+                    <!-- ==================== [CHANGE LOGO HERE] ==================== -->
+                    <!-- Replace the src below with your own logo URL/path -->
+                    <a href="index.html">
+                        <img id="site-logo"
+                             src="logoo.png"
+                             alt="avela Logo"
+                             class="h-12 sm:h-14 md:h-16 w-auto object-contain rounded">
+                    </a>
+                    <!-- =========================================================== -->
+                </div>
+
+                <!-- DESKTOP NAVIGATION MENU (centered and balanced with the logo) -->
+                <nav class="hidden md:flex items-center space-x-8 text-sm font-medium absolute left-1/2 -translate-x-1/2">
+                    <a href="company.html" class="text-harbour-navy/80 hover:text-accent-400 transition-colors py-2">About Us</a>
+                    <a href="product.html" class="text-harbour-navy/80 hover:text-accent-400 transition-colors py-2">Products</a>
+                    <a href="#catalog" class="text-harbour-navy/80 hover:text-accent-400 transition-colors py-2">Catalog</a>
+                    <a href="contact.html" class="text-harbour-navy/80 hover:text-accent-400 transition-colors py-2">Contact</a>
+                </nav>
+
+
+            </div>
+        </div>
+
+        <!-- MOBILE MENU DROPDOWN -->
+        <div id="mobile-menu" class="hidden md:hidden bg-moon-cream border-b border-harbour-navy/10 px-4 pt-2 pb-6 space-y-3">
+            <a href="company.html" class="block py-2 text-base font-medium text-harbour-navy/80 hover:text-accent-400">About Us</a>
+            <a href="products.html" class="block py-2 text-base font-medium text-harbour-navy/80 hover:text-accent-400">Products</a>
+            <a href="#catalog" class="block py-2 text-base font-medium text-harbour-navy/80 hover:text-accent-400">Catalog</a>
+            <a href="contact.html" class="block py-2 text-base font-medium text-harbour-navy/80 hover:text-accent-400">Contact</a>
+        </div>
+    </header>
+
+    <!-- ========================================================= -->
+    <!-- HERO SECTION                                              -->
+    <!-- ========================================================= -->
+    <section class="relative pt-32 pb-20 md:pt-44 md:pb-32 overflow-hidden bg-moon-cream">
+        <!-- Background Ambient Light Effects -->
+        <div class="absolute top-1/4 left-1/2 -translate-x-1/2 -translate-y-1/2 w-96 h-96 bg-harbour-navy/5 rounded-full blur-3xl pointer-events-none"></div>
+        <div class="absolute top-1/3 right-10 w-72 h-72 bg-accent-500/10 rounded-full blur-3xl pointer-events-none"></div>
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+
+                <!-- HERO TEXT CONTENT -->
+                <div class="lg:col-span-7 space-y-6 text-center lg:text-left">
+                    <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-harbour-navy leading-tight">
+                       Lorem ipsum dolor sit amet <span class="text-transparent bg-clip-text bg-gradient-to-r from-accent-400 to-accent-500">Lorem ipsum </span>
+                    </h1>
+                    <p class="text-lg text-harbour-navy/80 max-w-2xl mx-auto lg:mx-0 font-normal leading-relaxed">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                    </p>
+
+                    <div class="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4 pt-4">
+                        <a href="#product" class="w-full sm:w-auto bg-accent-500 hover:bg-accent-600 text-harbour-navy font-bold px-8 py-4 rounded-xl shadow-lg shadow-accent-500/20 transition-all text-center">
+                            View Our Products
+                        </a>
+                        <a href="#company" class="w-full sm:w-auto border border-harbour-navy/30 hover:bg-moon-cream text-harbour-navy font-semibold px-8 py-4 rounded-xl transition-all text-center">
+                            Discover Our Advantages
+                        </a>
+                    </div>
+                </div>
+
+                <!-- HERO IMAGE -->
+                <div class="lg:col-span-5">
+                    <div class="relative  backdrop-blur-sm">
+                        <!-- ==================== [CHANGE MAIN HERO PHOTO HERE] ==================== -->
+                        <img id="hero-image"
+                             src="https://images.mfi.co.uk/products/ophelia-ceramic-table-lamp/carouselimages/ophelia-table-lamp_large_alt01.jpg?origin=ophelia-table-lamp_large_alt01.jpg&w=675"
+                             alt="avela"
+                             class="w-full h-[400px] object-cover rounded-xl shadow-inner">
+                        <!-- ======================================================================== -->
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ========================================================= -->
+    <!-- COMPANY PROFILE & ABOUT US (COMBINED SECTION)             -->
+    <!-- ========================================================= -->
+    <section id="company" class="py-24 bg-moon-cream border-t border-harbour-navy/10 scroll-mt-20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+            <!-- SECTION HEADING -->
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <h2 class="text-xs font-semibold uppercase tracking-widest text-harbour-navy/40 mb-2">Company Profile &amp; About Us</h2>
+                <h3 class="text-3xl sm:text-4xl font-bold text-harbour-navy">A Trusted Partner for Lighting</h3>
+                <p class="mt-4 text-harbour-navy/80 text-base">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                </p>
+            </div>
+
+            <!-- NARRATIVE + FEATURES -->
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center mb-16">
+
+                <!-- IMAGE -->
+                <div class="lg:col-span-5">
+                    <!-- ==================== [CHANGE ABOUT US PHOTO HERE] ==================== -->
+                    <img id="about-img-1"
+                         src="capella1.png"
+                         alt="Ship Light Testing Facility"
+                         class="rounded-2xl w-full h-80 lg:h-[420px] object-cover border border-harbour-navy/20 shadow-2xl">
+                    <!-- ======================================================================== -->
+                </div>
+
+                <!-- TEXT CONTENT -->
+                <div class="lg:col-span-7 space-y-6">
+                    <h4 class="text-2xl sm:text-3xl font-bold text-harbour-navy">Why Choose Our Lighting Products?</h4>
+                    <p class="text-harbour-navy/80 text-sm sm:text-base leading-relaxed">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                    </p>
+
+                    <!-- FEATURES LIST -->
+                    <div class="space-y-4 pt-2">
+                        <div class="flex items-start gap-4">
+                            <div class="w-10 h-10 rounded-lg bg-accent-500/15 flex items-center justify-center text-accent-400 shrink-0">
+                                <i class="fa-solid fa-water"></i>
+                            </div>
+                            <div>
+                                <h5 class="text-base font-bold text-harbour-navy">High-Grade Anti-Corrosion Material</h5>
+                                <p class="text-xs text-harbour-navy/50 mt-1">lorem ipsum dolor sit amet.</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start gap-4">
+                            <div class="w-10 h-10 rounded-lg bg-harbour-navy/10 flex items-center justify-center text-harbour-navy/40 shrink-0">
+                                <i class="fa-solid fa-bolt"></i>
+                            </div>
+                            <div>
+                                <h5 class="text-base font-bold text-harbour-navy">Energy Efficient &amp; Vibration Resistant</h5>
+                                <p class="text-xs text-harbour-navy/50 mt-1">lorem ipsum dolor sit amet.</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start gap-4">
+                            <div class="w-10 h-10 rounded-lg bg-accent-500/15 flex items-center justify-center text-accent-400 shrink-0">
+                                <i class="fa-solid fa-headset"></i>
+                            </div>
+                            <div>
+                                <h5 class="text-base font-bold text-harbour-navy">Technical Support &amp; Full Warranty</h5>
+                                <p class="text-xs text-harbour-navy/50 mt-1">lorem ipsum dolor sit amet.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- VISION MISSION & STANDARDS GRID -->
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- CARD 1 -->
+                <div class="bg-white/60 border border-harbour-navy/15 rounded-2xl p-8 hover:border-harbour-navy/50 transition-all">
+                    <div class="w-12 h-12 bg-harbour-navy/10 rounded-xl flex items-center justify-center text-harbour-navy/40 text-2xl mb-6">
+                        <i class="fa-solid fa-eye"></i>
+                    </div>
+                    <h4 class="text-xl font-bold text-harbour-navy mb-3">Company Vision</h4>
+                    <p class="text-harbour-navy/80 text-sm leading-relaxed">
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. A in iure voluptatem, rem doloribus deleniti exercitationem fugiat. Magnam possimus, excepturi eaque quis odit ad amet. Reiciendis iure et natus repellendus.
+                    </p>
+                </div>
+
+                <!-- CARD 2 -->
+                <div class="bg-white/60 border border-harbour-navy/15 rounded-2xl p-8 hover:border-accent-500/70 transition-all">
+                    <div class="w-12 h-12 bg-accent-500/15 rounded-xl flex items-center justify-center text-accent-400 text-2xl mb-6">
+                        <i class="fa-solid fa-bullseye"></i>
+                    </div>
+                    <h4 class="text-xl font-bold text-harbour-navy mb-3">Core Mission</h4>
+                    <p class="text-harbour-navy/80 text-sm leading-relaxed">
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. A in iure voluptatem, rem doloribus deleniti exercitationem fugiat. Magnam possimus, excepturi eaque quis odit ad amet. Reiciendis iure et natus repellendus.
+                    </p>
+                </div>
+
+                <!-- CARD 3 -->
+                <div class="bg-white/60 border border-harbour-navy/15 rounded-2xl p-8 hover:border-harbour-navy/50 transition-all">
+                    <div class="w-12 h-12 bg-harbour-navy/10 rounded-xl flex items-center justify-center text-harbour-navy/40 text-2xl mb-6">
+                        <i class="fa-solid fa-shield-halved"></i>
+                    </div>
+                    <h4 class="text-xl font-bold text-harbour-navy mb-3">Certification &amp; Standards</h4>
+                    <p class="text-harbour-navy/80 text-sm leading-relaxed">
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. A in iure voluptatem, rem doloribus deleniti exercitationem fugiat. Magnam possimus, excepturi eaque quis odit ad amet. Reiciendis iure et natus repellendus.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========================================================= -->
+    <!-- PRODUCT SECTION (3 CARDS)                                 -->
+    <!-- ========================================================= -->
+    <section id="product" class="py-24 bg-moon-cream border-t border-harbour-navy/10 scroll-mt-20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between mb-16">
+                <h1 class="text-3xl text-left sm:text-4xl font-bold text-harbour-navy max-w-3xl">Featured Products</h1>
+                <a href="product.html" class="bg-accent-500 hover:bg-accent-600 text-harbour-navy font-semibold px-5 py-2.5 rounded-lg shadow-lg shadow-accent-500/20 transition-all transform hover:-translate-y-0.5 whitespace-nowrap">
+                    View All Products
+                </a>
+            </div>
+
+            <!-- PRODUCTS GRID -->
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+
+                <!-- PRODUCT CARD 1 -->
+                <article class="flex flex-col bg-moon-cream border border-harbour-navy/15 rounded-2xl overflow-hidden shadow-xl shadow-harbour-navy/10 transition-all duration-300 hover:-translate-y-1 hover:border-accent-500/60">
+                    <div class="relative overflow-hidden bg-moon-cream h-56">
+                        <img src="aurora1.png"
+                             alt="AURORA Navigation Light"
+                             class="w-full h-full object-cover transition-transform duration-500 hover:scale-105">
+                    </div>
+                    <div class="flex flex-col flex-1 p-6">
+                        <h4 class="text-lg font-bold text-harbour-navy mb-2">AURORA</h4>
+                        <p class="text-harbour-navy/80 text-sm leading-relaxed mb-4">
+                            lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                        </p>
+                        <a href="product.html" class="mt-auto block text-center w-full bg-moon-cream hover:bg-accent-500 hover:text-harbour-navy text-harbour-navy font-semibold py-2.5 rounded-lg text-sm transition-all">
+                            Product Details
+                        </a>
+                    </div>
+                </article>
+
+                <!-- PRODUCT CARD 2 -->
+                <article class="flex flex-col bg-moon-cream border border-harbour-navy/15 rounded-2xl overflow-hidden shadow-xl shadow-harbour-navy/10 transition-all duration-300 hover:-translate-y-1 hover:border-accent-500/60">
+                    <div class="relative overflow-hidden bg-moon-cream h-56">
+                        <img src="zosma1.jpeg"
+                             alt="Marine Searchlight"
+                             class="w-full h-full object-cover transition-transform duration-500 hover:scale-105">
+                    </div>
+                    <div class="flex flex-col flex-1 p-6">
+                        <h4 class="text-lg font-bold text-harbour-navy mb-2">Searchlight Series</h4>
+                        <p class="text-harbour-navy/80 text-sm leading-relaxed mb-4">
+                            lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                        </p>
+                        <a href="product.html" class="mt-auto block text-center w-full bg-moon-cream hover:bg-accent-500 hover:text-harbour-navy text-harbour-navy font-semibold py-2.5 rounded-lg text-sm transition-all">
+                            Product Details
+                        </a>
+                    </div>
+                </article>
+
+                <!-- PRODUCT CARD 3 -->
+                <article class="flex flex-col bg-moon-cream border border-harbour-navy/15 rounded-2xl overflow-hidden shadow-xl shadow-harbour-navy/10 transition-all duration-300 hover:-translate-y-1 hover:border-accent-500/60">
+                    <div class="relative overflow-hidden bg-moon-cream h-56">
+                        <img src="arcturus.png"
+                             alt="Deck & Floodlight"
+                             class="w-full h-full object-cover transition-transform duration-500 hover:scale-105">
+                    </div>
+                    <div class="flex flex-col flex-1 p-6">
+                        <h4 class="text-lg font-bold text-harbour-navy mb-2">AURORA</h4>
+                        <p class="text-harbour-navy/80 text-sm leading-relaxed mb-4">
+                           lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                        </p>
+                        <a href="product.html" class="mt-auto block text-center w-full bg-moon-cream hover:bg-accent-500 hover:text-harbour-navy text-harbour-navy font-semibold py-2.5 rounded-lg text-sm transition-all">
+                            Product Details
+                        </a>
+                    </div>
+                </article>
+</div>
+
+            <!-- CATALOG DOWNLOAD -->
+            <div id="catalog" class="mt-16 bg-moon-cream border border-harbour-navy/20 rounded-3xl p-8 sm:p-12 lg:p-16 relative overflow-hidden shadow-2xl">
+                <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center relative z-10">
+                    <div class="lg:col-span-7 space-y-4">
+                        <h3 class="text-3xl sm:text-4xl font-extrabold text-harbour-navy">Download the Complete Catalog &amp; Technical Specifications</h3>
+                        <p class="text-harbour-navy/80 text-sm sm:text-base leading-relaxed">
+                            Get the full list of our Lamp products, including lighting curves, wiring diagrams, test certificates, and official pricing.
+                        </p>
+
+                        <!-- CATALOG DOWNLOAD FORM -->
+                        <form onsubmit="handleCatalogDownload(event)" class="pt-4 flex flex-col sm:flex-row gap-3 max-w-lg">
+                            <input type="email"
+                                   required
+                                   placeholder="Enter Your Email..."
+                                   class="px-4 py-3.5 rounded-xl bg-white/80 border border-harbour-navy/30 text-harbour-navy placeholder-harbour-navy/40 focus:outline-none focus:border-accent-400 text-sm flex-1">
+                            <button type="submit" class="bg-accent-500 hover:bg-accent-600 text-harbour-navy font-bold px-6 py-3.5 rounded-xl transition-all flex items-center justify-center gap-2 text-sm whitespace-nowrap shadow-lg shadow-accent-500/20">
+                                <i class="fa-solid fa-file-pdf text-lg"></i>
+                                Download Catalog (PDF)
+                            </button>
+                        </form>
+                        <p id="download-message" class="text-xs text-accent-400 hidden pt-2">
+                            <i class="fa-solid fa-circle-check mr-1"></i> Thank you! The PDF catalog download link has been sent.
+                        </p>
+                    </div>
+
+                    <!-- CATALOG PREVIEW GRAPHIC -->
+                    <div class="lg:col-span-5 flex justify-center">
+                        <div class="relative w-full max-w-xs bg-moon-cream border border-harbour-navy/30 rounded-2xl p-6 shadow-2xl transform rotate-2 hover:rotate-0 transition-transform">
+                            <!-- ==================== [CHANGE CATALOG COVER PHOTO HERE] ==================== -->
+                            <img id="catalog-cover-img"
+                                 src="https://images.unsplash.com/photo-1544620347-c4fd4a3d5957?auto=format&fit=crop&w=400&q=80"
+                                 alt="avela Lamp Catalog Cover"
+                                 class="w-full h-56 object-cover rounded-xl mb-4 border border-harbour-navy/20">
+                            <!-- =========================================================================== -->
+                            <div class="flex justify-between items-center text-xs">
+                                <div>
+                                    <p class="text-harbour-navy font-bold">Avela Catalog</p>
+                                    <p class="text-harbour-navy/50">PDF • 14.5 MB</p>
+                                </div>
+                                <span class="bg-accent-500/20 text-accent-400 px-2.5 py-1 rounded text-[10px] font-bold">
+                                    LATEST VERSION
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ========================================================= -->
+    <!-- CONTACT ADMIN SECTION                                     -->
+    <!-- ========================================================= -->
+    <section id="contact" class="py-24 bg-moon-cream border-t border-harbour-navy/10 scroll-mt-20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <h2 class="text-xs font-semibold uppercase tracking-widest text-accent-400 mb-2">Get In Touch</h2>
+                <h3 class="text-3xl sm:text-4xl font-bold text-harbour-navy">Contact Our Admin Directly</h3>
+                <p class="mt-4 text-harbour-navy/80 text-base">
+                    Have questions about our lighting products? Fill out the form below and our admin team will get back to you shortly.
+                </p>
+            </div>
+
+            <div class="max-w-2xl mx-auto bg-white/60 border border-harbour-navy/15 rounded-3xl p-8 sm:p-12 shadow-2xl">
+                <form onsubmit="handleContactForm(event)" class="space-y-6">
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                        <div>
+                            <label for="contact-name" class="block text-sm font-medium text-harbour-navy/80 mb-2">Full Name</label>
+                            <input type="text" id="contact-name" required
+                                   placeholder="Your name"
+                                   class="w-full px-4 py-3 rounded-xl bg-white/80 border border-harbour-navy/30 text-harbour-navy placeholder-harbour-navy/40 focus:outline-none focus:border-accent-400 text-sm">
+                        </div>
+                        <div>
+                            <label for="contact-email" class="block text-sm font-medium text-harbour-navy/80 mb-2">Email Address</label>
+                            <input type="email" id="contact-email" required
+                                   placeholder="you@example.com"
+                                   class="w-full px-4 py-3 rounded-xl bg-white/80 border border-harbour-navy/30 text-harbour-navy placeholder-harbour-navy/40 focus:outline-none focus:border-accent-400 text-sm">
+                        </div>
+                    </div>
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                        <div>
+                            <label for="contact-company" class="block text-sm font-medium text-harbour-navy/80 mb-2">Company Name</label>
+                            <input type="text" id="contact-company"
+                                   placeholder="Your company (optional)"
+                                   class="w-full px-4 py-3 rounded-xl bg-white/80 border border-harbour-navy/30 text-harbour-navy placeholder-harbour-navy/40 focus:outline-none focus:border-accent-400 text-sm">
+                        </div>
+                        <div>
+                            <label for="contact-phone" class="block text-sm font-medium text-harbour-navy/80 mb-2">Phone Number</label>
+                            <input type="tel" id="contact-phone"
+                                   placeholder="+62 ..."
+                                   class="w-full px-4 py-3 rounded-xl bg-white/80 border border-harbour-navy/30 text-harbour-navy placeholder-harbour-navy/40 focus:outline-none focus:border-accent-400 text-sm">
+                        </div>
+                    </div>
+                    <div>
+                        <label for="contact-subject" class="block text-sm font-medium text-harbour-navy/80 mb-2">Subject</label>
+                        <select id="contact-subject" required
+                                class="w-full px-4 py-3 rounded-xl bg-white/80 border border-harbour-navy/30 text-harbour-navy placeholder-harbour-navy/40 focus:outline-none focus:border-accent-400 text-sm">
+                            <option value="" disabled selected>Select a topic</option>
+                            <option>Product Inquiry</option>
+                            <option>Technical Support</option>
+                            <option>Quotation & Pricing</option>
+                            <option>Catalog Download</option>
+                            <option>Other</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label for="contact-message" class="block text-sm font-medium text-harbour-navy/80 mb-2">Message</label>
+                        <textarea id="contact-message" rows="5" required
+                                  placeholder="Type your message here..."
+                                  class="w-full px-4 py-3 rounded-xl bg-white/80 border border-harbour-navy/30 text-harbour-navy placeholder-harbour-navy/40 focus:outline-none focus:border-accent-400 text-sm resize-none"></textarea>
+                    </div>
+                    <button type="submit" class="w-full bg-accent-500 hover:bg-accent-600 text-harbour-navy font-bold px-6 py-4 rounded-xl transition-all flex items-center justify-center gap-2 text-sm shadow-lg shadow-accent-500/20">
+                        <i class="fa-solid fa-paper-plane"></i>
+                        Send Message to Admin
+                    </button>
+                    <p id="contact-message-status" class="text-xs text-accent-400 hidden pt-2 text-center">
+                        <i class="fa-solid fa-circle-check mr-1"></i> Thank you! Your message has been sent. Our admin will contact you shortly.
+                    </p>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========================================================= -->
+    <!-- FOOTER                                                    -->
+    <!-- ========================================================= -->
+    <footer class="bg-moon-cream text-harbour-navy/50 text-sm border-t border-harbour-navy/10">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
+
+                <!-- BRAND & ADDRESS -->
+                <div class="space-y-4">
+                    <div class="flex items-center gap-3">
+                        <!-- ==================== [CHANGE FOOTER LOGO HERE] ==================== -->
+                        <img id="footer-logo"
+                             src="Logo White.png"
+                             alt="NauticaLight Footer Logo"
+                             class="h-12 w-auto object-contain rounded">
+                        <!-- ==================================================================== -->
+                    </div>
+                    <p class="text-xs text-harbour-navy/50 leading-relaxed">
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Exercitationem natus rerum perspiciatis nobis atque sapiente ipsam cum quod illo perferendis, facere minima.
+                </div>
+
+                <!-- QUICK LINKS -->
+                <div>
+                    <h5 class="text-harbour-navy font-semibold mb-4 text-sm">Navigation</h5>
+                    <ul class="space-y-2 text-xs">
+                        <li><a href="company.html" class="hover:text-accent-400 transition-colors">About Us</a></li>
+                        <li><a href="products.html" class="hover:text-accent-400 transition-colors">Products</a></li>
+                        <li><a href="#catalog" class="hover:text-accent-400 transition-colors">Catalog</a></li>
+                        <li><a href="#contact" class="hover:text-accent-400 transition-colors">Contact Admin</a></li>
+                        <li><a href="#catalog" class="hover:text-accent-400 transition-colors">Download Catalog PDF</a></li>
+                    </ul>
+                </div>
+
+                <!-- CONTACT INFO -->
+                <div>
+                    <h5 class="text-harbour-navy font-semibold mb-4 text-sm">Contact Us</h5>
+                    <ul class="space-y-3 text-xs">
+                        <li class="flex items-start gap-3">
+                            <i class="fa-solid fa-location-dot text-accent-400 mt-0.5"></i>
+                            <span>lorem ipsum dolor sit amet</span>
+                        </li>
+                        <li class="flex items-center gap-3">
+                            <i class="fa-solid fa-phone text-accent-400"></i>
+                            <span>69669696</span>
+                        </li>
+                        <li class="flex items-center gap-3">
+                            <i class="fa-solid fa-envelope text-accent-400"></i>
+                            <span>sales@avela.com</span>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+
+            <!-- COPYRIGHT -->
+            <div class="mt-12 pt-8 border-t border-harbour-navy/10 text-center text-xs text-harbour-navy/40 flex flex-col sm:flex-row justify-center items-center gap-4 sm:gap-8">
+                <p>&copy; 2026 AVELA. All rights reserved.</p>
+                <div class="flex space-x-4">
+                    <a href="https://sg.linkedin.com/" class="hover:text-accent-400 transition-colors" target="_blank"><i class="fa-brands fa-linkedin text-lg"></i></a>
+                    <a href="https://www.facebook.com/" class="hover:text-accent-400 transition-colors" target="_blank"><i class="fa-brands fa-facebook text-lg"></i></a>
+                    <a href="https://www.instagram.com/" class="hover:text-accent-400 transition-colors" target="_blank"><i class="fa-brands fa-instagram text-lg"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ========================================================= -->
+    <!-- INTERACTIVE JAVASCRIPT                                    -->
+    <!-- ========================================================= -->
+    <script>
+        // Mobile Menu Toggle
+        const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        if (mobileMenuBtn && mobileMenu) {
+            mobileMenuBtn.addEventListener('click', () => {
+                mobileMenu.classList.toggle('hidden');
+            });
+
+            // Close Mobile Menu on Click
+            document.querySelectorAll('#mobile-menu a').forEach(link => {
+                link.addEventListener('click', () => {
+                    mobileMenu.classList.add('hidden');
+                });
+            });
+        }
+
+        // Catalog Download Form Handler
+        function handleCatalogDownload(event) {
+            event.preventDefault();
+            const msg = document.getElementById('download-message');
+            if (msg) {
+                msg.classList.remove('hidden');
+                setTimeout(() => {
+                    msg.classList.add('hidden');
+                }, 5000);
+            }
+        }
+
+        // Contact Admin Form Handler
+        function handleContactForm(event) {
+            event.preventDefault();
+            const msg = document.getElementById('contact-message-status');
+            if (msg) {
+                msg.classList.remove('hidden');
+                setTimeout(() => {
+                    msg.classList.add('hidden');
+                }, 5000);
+            }
+            event.target.reset();
+        }
+    </script>
+</body>
+</html>
